@@ -2,7 +2,8 @@
   position: relative;
 }
 
-.container {
+.container,
+.sidebar {
   height: 100vh;
 }
 
