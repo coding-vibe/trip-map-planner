@@ -1,13 +1,13 @@
-import { useContext, useEffect } from 'react';
-import clsx from 'clsx';
+import { useContext, useEffect } from "react";
+import clsx from "clsx";
 
-import { Map, AdvancedMarker, useMap } from '@vis.gl/react-google-maps';
-import TripContext, { TripContextType } from '@/contexts/TripContext';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
-import { Coordinates } from '@/types/trip';
-import zoomLevels from '@/constants/map';
-import styles from './ActivitiesMap.module.css';
+import { Map, AdvancedMarker, useMap } from "@vis.gl/react-google-maps";
+import TripContext, { TripContextType } from "@/contexts/TripContext";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
+import { Coordinates } from "@/types/trip";
+import zoomLevels from "@/constants/map";
+import styles from "./ActivitiesMap.module.css";
 
 interface Props {
   defaultCenter: Coordinates;
@@ -49,12 +49,17 @@ export default function ActivitiesMap({ defaultCenter }: Props) {
             >
               <OverlayTrigger
                 placement="auto"
-                overlay={<Tooltip id={`tooltip-${activity.id}`}>{activity.name}</Tooltip>}
+                overlay={
+                  <Tooltip id={`tooltip-${activity.id}`}>
+                    {activity.name}
+                  </Tooltip>
+                }
+                trigger={["hover", "focus", "click"]}
               >
                 <img
                   className={clsx(
                     styles.marker,
-                    selectedActivity?.id === activity.id && styles.highlighted,
+                    selectedActivity?.id === activity.id && styles.highlighted
                   )}
                   src="./marker.png"
                   alt="marker"
