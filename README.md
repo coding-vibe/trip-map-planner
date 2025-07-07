@@ -43,5 +43,5 @@ npm run build
 npm start
 ```
 
-> To use the Google Maps API, create a `.env` file with `REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_KEY_HERE`
+> To use the Google Maps API, create a `.env` file with `VITE_GOOGLE_MAPS_API_URL`
 > in the project root (look at env-template)
