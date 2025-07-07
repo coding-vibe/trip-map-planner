@@ -1,0 +1,57 @@
+.mainContainer {
+  position: relative;
+}
+
+.container {
+  height: 100vh;
+}
+
+.sidebar {
+  overflow-y: auto;
+}
+
+@media (min-width: 767px) {
+  .container {
+    display: flex;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  .sidebar {
+    padding: 2%;
+    width: 40%;
+  }
+
+  .main {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+
+  .menuIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    padding: 10% 2%;
+    background-color: var(--bs-body-bg);
+    transition: left 0.3s ease;
+    z-index: 1;
+  }
+
+  .sidebar--open {
+    left: 0;
+  }
+}

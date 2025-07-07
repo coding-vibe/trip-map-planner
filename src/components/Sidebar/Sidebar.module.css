@@ -1,0 +1,10 @@
+.title {
+  margin-bottom: 20px;
+  color: var(--bs-primary);
+  font-weight: 600;
+}
+
+
+.activities {
+  overflow-y: auto;
+}

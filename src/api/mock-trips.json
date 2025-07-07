@@ -1,0 +1,57 @@
+{
+  "trip_title": "Римські канікули",
+  "days": [
+    {
+      "id": 1,
+      "title": "Прибуття та знайомство з Римом",
+      "activities": [
+        {
+          "id": 101,
+          "name": "Фонтан ді Треві",
+          "description": "Киньте монетку, щоб повернутися.",
+          "photo_url": "https://sights.com.ua/wp-content/uploads/2021/12/xtrevifountain.jpg.pagespeed.ic.qiFtmUAW2s.webp",
+          "coords": {
+            "lat": 41.9009,
+            "lng": 12.4833
+          }
+        },
+        {
+          "id": 102,
+          "name": "Пантеон",
+          "description": "Храм усіх богів з унікальним куполом.",
+          "photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg",
+          "coords": {
+            "lat": 41.8986,
+            "lng": 12.4768
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Античний Рим",
+      "activities": [
+        {
+          "id": 201,
+          "name": "Колізей",
+          "description": "Символ величі Римської імперії.",
+          "photo_url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=500&q=80",
+          "coords": {
+            "lat": 41.8902,
+            "lng": 12.4922
+          }
+        },
+        {
+          "id": 202,
+          "name": "Римський Форум",
+          "description": "Серце стародавнього міста.",
+          "photo_url": "https://cdn.getyourguide.com/image/format=auto,fit=contain,gravity=auto,quality=60,width=1440,height=650,dpr=1/tour_img/01508df1fae9dca6.jpeg",
+          "coords": {
+            "lat": 41.8925,
+            "lng": 12.4853
+          }
+        }
+      ]
+    }
+  ]
+}
